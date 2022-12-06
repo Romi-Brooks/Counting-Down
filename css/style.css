@@ -1,0 +1,100 @@
+body {
+    background: linear-gradient(to right, transparent, pink),
+    url("https://mdn.mozillademos.org/files/15525/critters.png");
+    font-family: "Microsoft YaHei", "微软雅黑", "STHeiti", "华文细黑", "STXihei", "华文细黑", "SimHei", "黑体", "WenQuanYi Micro Hei", "文泉驿微米黑", "WenQuanYi Zen Hei", "文泉驿正黑", "FZShuTi", "方正舒体", "FZYaoti", "方正姚体", "NSimSun", "新宋体", "LiSu", "隶书", "YouYuan", "幼圆", sans-serif;
+}
+
+.container {
+    position: relative;
+    height: 100px;
+}
+
+.title-Main h1 {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 400px;
+    height: 75px;
+    font-size: 3em;
+    font-weight: bold;
+    color: #000000;
+}
+
+.title-In h2 {
+    position: fixed;
+    top: 85px;
+    bottom: 0;
+    left: 580px;
+    right: 0;
+    margin: auto;
+    width: 400px;
+    height: 50px;
+    font-size: 2em;
+    font-weight: bold;
+    color: #000000;
+}
+
+.count-Down {
+    position: fixed;
+    top: 85px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 600px;
+    height: 50px;
+    font-size: 3em;
+    font-weight: normal;
+    color: #000000;
+}
+
+/*当设备width小于xxx时*/
+@media screen and (max-width: 980px) {
+    .title-In h2 {
+        left: 280px;
+        text-align: center;
+    }
+}
+@media screen and (max-width: 670px) {
+    .title-In h2 {
+        position: fixed;
+        left: -35px;
+        text-align: right;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .count-Down {
+        width: 500px;
+        font-size: 3em;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .count-Down {
+        width: 400px;
+        font-size: 3em;
+    }
+}
+@media screen and (max-width: 400px) {
+    .title-In h2 {
+        font-size: 1.5em;
+        left: 105px;
+        text-align: center;
+
+    }
+    .title-Main h1 {
+        font-size: 2.2em;
+        text-align: center;
+    }
+    .count-Down {
+        position: fixed;
+        width: 300px;
+        font-size: 2.5em;
+        text-align: center;
+    }
+
+}
