@@ -2,7 +2,7 @@ function countDown() {
     let date = new Date();
     let now = date.getTime();
 
-    let str = "2023/02/22 00:00:00";
+    let str = "2023/01/22 00:00:00";
     let endDate = new Date(str);
     let end = endDate.getTime();
 
